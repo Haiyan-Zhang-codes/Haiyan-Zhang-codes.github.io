@@ -3,5 +3,6 @@
     "about_me": "About Me",
     "data_analytics": "Data Analytics Projects",
     "web_app":"Web Application Projects",
-    "contact_me": "Contact Me"
+    "contact_me": "Contact Me",
+    "homepage_slogan": ["Hello World!", "My name is Haiyan, nice to meet you."]
 }

@@ -3,5 +3,6 @@
     "about_me": "À propos de moi",
     "data_analytics": "Projets d'analyse de données",
     "web_app":"Projets d'application web",
-    "contact_me": "Contactez-moi"
+    "contact_me": "Contactez-moi",
+    "homepage_slogan": ["Bonjour le monde!", "Je m'appelle Haiyan, enchantée de vous rencontrer."]
 }

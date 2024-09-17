@@ -1,28 +1,12 @@
 import React, { useContext } from "react";
 import { useState } from "react";
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import {
-  Box,
-  IconButton,
-  InputBase,
-  Typography,
-  Select,
-  MenuItem,
-  FormControl,
-  useTheme,
-  useMediaQuery,
-  Button,
-} from "@mui/material";
-import {
-  Search,
-  Message,
   DarkMode,
   LightMode,
-  Notifications,
-  Help,
   Menu,
   Close,
   Language,
-  MenuIcon,
 } from "@mui/icons-material";
 import { useNavigate, useLocation } from "react-router-dom";
 import FlexBetween from "../../components/FlexBetween";
@@ -37,13 +21,11 @@ const Navbar = () => {
   const isNonMobileScreens = useMediaQuery("(min-width: 1100px)");
 
   const theme = useTheme();
-  const neutralLight = theme.palette.neutral.light;
   const dark = theme.palette.dark;
-  const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  const { mode, toggleMode } = useContext(ModeContext);
+  const { toggleMode } = useContext(ModeContext);
 
   const activeTabStyle = {
     color:
@@ -71,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <FlexBetween padding="1rem 6%" backgroundColor={alt}>
+    <FlexBetween padding="1rem 6%" backgroundColor={alt} position="sticky" top="0" zIndex='1000'>
       <FlexBetween>
         <Typography
           fontWeight="bold"
@@ -89,7 +71,7 @@ const Navbar = () => {
         </Typography>
       </FlexBetween>
       {isNonMobileScreens ? (
-        <FlexBetween gap="2rem">
+        <FlexBetween gap="1.7rem">
           <Typography
             color="primary"
             fontSize="1.2rem"
@@ -107,25 +89,29 @@ const Navbar = () => {
             {t("web_app")}
           </Typography>
           <Typography
-              color="primary"
-              fontSize="1.2rem"
-              onClick={() => navigate("/en/data-analytics-projects")}
-              sx={{
-                ...(location.pathname === "/en/data-analytics-projects" ? activeTabStyle : normalTabStyle),
-                "&:hover": {
-                  color: primaryLight,
-                  cursor: "pointer",
-                },
-              }}
-            >
-              {t("data_analytics")}
-            </Typography>
+            color="primary"
+            fontSize="1.2rem"
+            onClick={() => navigate("/en/data-analytics-projects")}
+            sx={{
+              ...(location.pathname === "/en/data-analytics-projects"
+                ? activeTabStyle
+                : normalTabStyle),
+              "&:hover": {
+                color: primaryLight,
+                cursor: "pointer",
+              },
+            }}
+          >
+            {t("data_analytics")}
+          </Typography>
           <Typography
             color="primary"
             fontSize="1.2rem"
             onClick={() => navigate("/en/about-me")}
             sx={{
-                ...(location.pathname === "/en/about-me" ? activeTabStyle : normalTabStyle),   
+              ...(location.pathname === "/en/about-me"
+                ? activeTabStyle
+                : normalTabStyle),
               "&:hover": {
                 color: primaryLight,
                 cursor: "pointer",
@@ -139,7 +125,9 @@ const Navbar = () => {
             fontSize="1.2rem"
             onClick={() => navigate("/en/contact-me")}
             sx={{
-                ...(location.pathname === "/en/contact-me" ? activeTabStyle : normalTabStyle),
+              ...(location.pathname === "/en/contact-me"
+                ? activeTabStyle
+                : normalTabStyle),
               "&:hover": {
                 color: primaryLight,
                 cursor: "pointer",
@@ -182,7 +170,9 @@ const Navbar = () => {
               fontSize="1.2rem"
               onClick={() => navigate("/en/web-app-dev-projects")}
               sx={{
-                ...(location.pathname === "/en/web-app-dev-projects" ? activeTabStyle : normalTabStyle),
+                ...(location.pathname === "/en/web-app-dev-projects"
+                  ? activeTabStyle
+                  : normalTabStyle),
                 "&:hover": {
                   color: primaryLight,
                   cursor: "pointer",
@@ -196,7 +186,9 @@ const Navbar = () => {
               fontSize="1.2rem"
               onClick={() => navigate("/en/data-analytics-projects")}
               sx={{
-                ...(location.pathname === "/en/data-analytics-projects" ? activeTabStyle : normalTabStyle),
+                ...(location.pathname === "/en/data-analytics-projects"
+                  ? activeTabStyle
+                  : normalTabStyle),
                 "&:hover": {
                   color: primaryLight,
                   cursor: "pointer",
@@ -210,7 +202,9 @@ const Navbar = () => {
               fontSize="1.2rem"
               onClick={() => navigate("/en/about-me")}
               sx={{
-                ...(location.pathname === "/en/about-me" ? activeTabStyle : normalTabStyle),
+                ...(location.pathname === "/en/about-me"
+                  ? activeTabStyle
+                  : normalTabStyle),
                 "&:hover": {
                   color: primaryLight,
                   cursor: "pointer",
@@ -224,7 +218,9 @@ const Navbar = () => {
               fontSize="1.2rem"
               onClick={() => navigate("/en/contact-me")}
               sx={{
-                ...(location.pathname === "/en/contact-me" ? activeTabStyle : normalTabStyle),
+                ...(location.pathname === "/en/contact-me"
+                  ? activeTabStyle
+                  : normalTabStyle),
                 "&:hover": {
                   color: primaryLight,
                   cursor: "pointer",
