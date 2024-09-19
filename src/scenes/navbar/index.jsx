@@ -53,7 +53,13 @@ const Navbar = () => {
   };
 
   return (
-    <FlexBetween padding="1rem 6%" backgroundColor={alt} position="sticky" top="0" zIndex='1000'>
+    <FlexBetween
+      padding="1rem 6%"
+      backgroundColor={alt}
+      position="sticky"
+      top="0"
+      zIndex="1000"
+    >
       <FlexBetween>
         <Typography
           fontWeight="bold"

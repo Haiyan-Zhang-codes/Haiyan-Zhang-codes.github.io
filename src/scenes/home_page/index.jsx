@@ -14,8 +14,6 @@ const HomePage = () => {
   const [wordIndex, setWordIndex] = useState(0); 
 
   const theme = useTheme();
-  const dark = theme.palette.dark;
-  const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
   const isNonMobileScreens = useMediaQuery("(min-width: 1100px)");
@@ -42,7 +40,7 @@ useEffect(() => {
             return newDisplayedText;
           });
           setWordIndex(wordIndex + 1); // Move to the next word
-        }, 200); // Adjust word rendering speed
+        }, 100); // Adjust word rendering speed
         return () => clearTimeout(timeoutId);
       } else {
         setWordIndex(0); // Reset word index for the next sentence
@@ -57,9 +55,9 @@ useEffect(() => {
       {isNonMobileScreens ? (
         <Box
         width="100%"
-        padding="2rem 6%"
+        padding="2rem 15%"
         height="80vh"
-        backgroundColor={alt}
+        // backgroundColor={alt}
         sx={{
           backgroundImage: "url(/assets/home_page-removebg-preview.png)",
           backgroundSize: "contain",
@@ -78,7 +76,7 @@ useEffect(() => {
             textAlign: "left",
           }}
         >
-          <Typography fontSize="1.5rem" color="primary" sx={{ whiteSpace: "pre-wrap" }}>
+          <Typography fontSize="1.5rem" color={theme.palette.primary.dark} sx={{ whiteSpace: "pre-wrap" }}>
           {displayedText.map((sentence, index) => (
               <div key={index} className="fade-in-word">
                 {sentence}
@@ -100,12 +98,12 @@ useEffect(() => {
         </Box>
       </Box>
       ):(
-        <FlexBetween flexDirection='column' backgroundColor={alt}>
+        <FlexBetween flexDirection='column' >
         <Box
         width="100%"
         padding="2rem 6%"
         height="65vh"
-        backgroundColor={alt}
+       
         sx={{
           backgroundImage: "url(/assets/home_page-removebg-preview.png)",
           backgroundSize: "contain",
@@ -126,7 +124,7 @@ useEffect(() => {
         textAlign: "left",
       }}
     >
-      <Typography fontSize="1.5rem" color="primary" sx={{ whiteSpace: "pre-wrap" }}>
+      <Typography fontSize="1.5rem" color={theme.palette.primary.dark} sx={{ whiteSpace: "pre-wrap" }}>
       {displayedText.map((sentence, index) => (
           <div key={index} className="fade-in-word">
             {sentence}

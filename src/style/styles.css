@@ -1,6 +1,6 @@
 .fade-in-word {
     opacity: 0;
-    animation: fadeIn 1s forwards; /* 1s is the duration of the animation */
+    animation: fadeIn 3s forwards; /* 1s is the duration of the animation */
   }
   
   @keyframes fadeIn {
