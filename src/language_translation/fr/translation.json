@@ -1,49 +1,58 @@
 {
-    "app_name": "Portefeuille",
-    "about_me": "À propos de moi",
-    "data_analytics": "Projets d'analyse de données",
-    "web_app":"Projets d'application web",
-    "contact_me": "Contactez-moi",
-    "homepage_slogan": ["Bonjour le monde!", "Je m'appelle Haiyan, enchantée de vous rencontrer."],
-   "web_app_project": [
-        {
-            "project": "Broker Ease",
-            "language": "Typescript",
-            "database": "MySQL, AWS RDS",
-            "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
-            "github_link": "Private",
-            "web_app_link":"https://brokerease.netlify.app/login",
-            "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
-            "workflow": [
-                "Database Design: using draw.io to design the database structure", 
-                "Build Database: using Knex to create migration files for the database",
-                "Database configuration: Created an AWS RDS database and configured the database connection.",
-                "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-                "Test: Used Postman to test each API with seed data."
-            ]
-            }, 
-        {
-            "project": "Computer Science Certificate Final Project - Bookkeeping",
-            "language": "Python",
-            "database": "SQLite",
-            "packages": "Flask, flask_session, werkzeug, datetime",
-            "github_link": "Private",
-            "web_app_link":"https://brokerease.netlify.app/login",
-            "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
-            "workflow": [
-                "Database Design: using draw.io to design the database structure", 
-                "Build Database: using Knex to create migration files for the database",
-                "Database configuration: Created an AWS RDS database and configured the database connection.",
-                "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-                "Test: Used Postman to test each API with seed data."
-            ]
-        }
-    ],
-    "about_me_page": [
-        {
-            "title": "Childhood",
-            "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
-            "description": "This is a test"
-        }
-    ]
+  "app_name": "Portefeuille",
+  "about_me": "À propos de moi",
+  "data_analytics": "Projets d'analyse de données",
+  "web_app": "Projets d'application web",
+  "contact_me": "Contactez-moi",
+  "homepage_slogan": [
+    "Bonjour le monde!",
+    "Je m'appelle Haiyan, enchantée de vous rencontrer."
+  ],
+  "web_app_project": [
+    {
+      "project": "Broker Ease",
+      "language": "Typescript",
+      "database": "MySQL, AWS RDS",
+      "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
+      "github_link": "Private",
+      "web_app_link": "https://brokerease.netlify.app/login",
+      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "workflow": [
+        "Database Design: using draw.io to design the database structure",
+        "Build Database: using Knex to create migration files for the database",
+        "Database configuration: Created an AWS RDS database and configured the database connection.",
+        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
+        "Test: Used Postman to test each API with seed data."
+      ]
+    },
+    {
+      "project": "Computer Science Certificate Final Project - Bookkeeping",
+      "language": "Python",
+      "database": "SQLite",
+      "packages": "Flask, flask_session, werkzeug, datetime",
+      "github_link": "Private",
+      "web_app_link": "https://brokerease.netlify.app/login",
+      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "workflow": [
+        "Database Design: using draw.io to design the database structure",
+        "Build Database: using Knex to create migration files for the database",
+        "Database configuration: Created an AWS RDS database and configured the database connection.",
+        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
+        "Test: Used Postman to test each API with seed data."
+      ]
+    }
+  ],
+  "about_me_page": [
+    {
+      "title": "Childhood",
+      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
+      "description": "This is a test"
+    }
+  ],
+  "contact_me_page": {
+    "name": "Votre Nom",
+    "company": "Entreprise",
+    "email": "Courriel",
+    "message": "Message"
+  }
 }

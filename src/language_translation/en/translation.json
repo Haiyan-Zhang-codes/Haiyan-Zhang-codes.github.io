@@ -1,62 +1,73 @@
 {
-    "app_name": "Portfolio",
-    "about_me": "About Me",
-    "data_analytics": "Data Analytics Projects",
-    "web_app":"Web Application Projects",
-    "contact_me": "Contact Me",
-    "homepage_slogan": ["Hello World!", "My name is Haiyan, nice to meet you."],
-    "web_app_project": [
-        {
-            "project": "Broker Ease",
-            "language": "Typescript",
-            "database": "MySQL, AWS RDS",
-            "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
-            "github_link": "Private",
-            "web_app_link":"https://brokerease.netlify.app/login",
-            "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
-            "workflow": [
-                "Database Design: using draw.io to design the database structure", 
-                "Build Database: using Knex to create migration files for the database",
-                "Database configuration: Created an AWS RDS database and configured the database connection.",
-                "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-                "Test: Used Postman to test each API with seed data."
-            ]
-            }, 
-        {
-            "project": "Computer Science Certificate Final Project - Bookkeeping",
-            "language": "Python",
-            "database": "SQLite",
-            "packages": "Flask, flask_session, werkzeug, datetime",
-            "github_link": "Private",
-            "web_app_link":"https://brokerease.netlify.app/login",
-            "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
-            "workflow": [
-                "Database Design: using draw.io to design the database structure", 
-                "Build Database: using Knex to create migration files for the database",
-                "Database configuration: Created an AWS RDS database and configured the database connection.",
-                "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-                "Test: Used Postman to test each API with seed data."
-            ]
-        }
-    ],
-    "about_me_page": [
-        {
-            "title": "Childhood",
-            "time":"1980s",
-            "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png", "/assets/pic1/MainAfter.webp", "/assets/pic1/gratisography-funflower-800x525.jpg"],
-            "description": "This is a testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-        },
-        {
-            "title": "Childhood",
-            "time":"1990s",
-            "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
-            "description": "This is a test"
-        },
-        {
-            "title": "Childhood",
-            "time":"2000s",
-            "image": ["/assets/pic1/childhood1.png","/assets/pic1/MainAfter.webp"],
-            "description": "This is a test"
-        }
-    ]
+  "app_name": "Portfolio",
+  "about_me": "About Me",
+  "data_analytics": "Data Analytics Projects",
+  "web_app": "Web Application Projects",
+  "contact_me": "Contact Me",
+  "homepage_slogan": ["Hello World!", "My name is Haiyan, nice to meet you."],
+  "web_app_project": [
+    {
+      "project": "Broker Ease",
+      "language": "Typescript",
+      "database": "MySQL, AWS RDS",
+      "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
+      "github_link": "Private",
+      "web_app_link": "https://brokerease.netlify.app/login",
+      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "workflow": [
+        "Database Design: using draw.io to design the database structure",
+        "Build Database: using Knex to create migration files for the database",
+        "Database configuration: Created an AWS RDS database and configured the database connection.",
+        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
+        "Test: Used Postman to test each API with seed data."
+      ]
+    },
+    {
+      "project": "Computer Science Certificate Final Project - Bookkeeping",
+      "language": "Python",
+      "database": "SQLite",
+      "packages": "Flask, flask_session, werkzeug, datetime",
+      "github_link": "Private",
+      "web_app_link": "https://brokerease.netlify.app/login",
+      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "workflow": [
+        "Database Design: using draw.io to design the database structure",
+        "Build Database: using Knex to create migration files for the database",
+        "Database configuration: Created an AWS RDS database and configured the database connection.",
+        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
+        "Test: Used Postman to test each API with seed data."
+      ]
+    }
+  ],
+  "about_me_page": [
+    {
+      "title": "Childhood",
+      "time": "1980s",
+      "image": [
+        "/assets/pic1/childhood1.png",
+        "/assets/pic1/childhood2.png",
+        "/assets/pic1/MainAfter.webp",
+        "/assets/pic1/gratisography-funflower-800x525.jpg"
+      ],
+      "description": "This is a testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "title": "Childhood",
+      "time": "1990s",
+      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
+      "description": "This is a test"
+    },
+    {
+      "title": "Childhood",
+      "time": "2000s",
+      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/MainAfter.webp"],
+      "description": "This is a test"
+    }
+  ],
+  "contact_me_page": {
+    "name": "Your Name",
+    "company": "Company",
+    "email": "Email",
+    "message": "Message"
+  }
 }
