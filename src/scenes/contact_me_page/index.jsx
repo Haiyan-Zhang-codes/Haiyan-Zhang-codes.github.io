@@ -3,8 +3,6 @@ import Navbar from "../navbar";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
-import { borderRadius, fontSize, padding } from "@mui/system";
-import FlexBetween from "../../components/FlexBetween";
 
 const emailUserId = process.env.REACT_APP_EMAIL_USER_ID;
 const emailTemplateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;

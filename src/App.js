@@ -7,7 +7,6 @@ import ContactMePage from "./scenes/contact_me_page";
 import { ModeProvider } from "./ModeContext";
 import { CssBaseline } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import i18n from "./i18n";
 
 
 function App() {

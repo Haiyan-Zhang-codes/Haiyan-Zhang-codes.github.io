@@ -1,11 +1,10 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import Navbar from "../navbar";
 import ProjectsWidget from "../Widgets/ProjectsWidget";
 
 const WebAppDevPage = () => {
     const isNonMobileScreens = useMediaQuery("(min-width: 1100px)")
-  const theme = useTheme();
-  const alt = theme.palette.background.alt;
+ 
   return (
     <Box>
       <Navbar />

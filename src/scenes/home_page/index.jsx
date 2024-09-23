@@ -14,7 +14,6 @@ const HomePage = () => {
   const [wordIndex, setWordIndex] = useState(0); 
 
   const theme = useTheme();
-  const alt = theme.palette.background.alt;
 
   const isNonMobileScreens = useMediaQuery("(min-width: 1100px)");
 

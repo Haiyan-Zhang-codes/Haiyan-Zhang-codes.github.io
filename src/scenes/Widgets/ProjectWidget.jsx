@@ -1,7 +1,6 @@
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
+
 import WidgetWrapper from "../../components/WidgetWrapper";
-import FlexBetween from "../../components/FlexBetween";
+
 import { Typography, useTheme } from "@mui/material";
 
 const ProjectWidget = ({
