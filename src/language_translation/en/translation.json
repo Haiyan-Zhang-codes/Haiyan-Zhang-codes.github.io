@@ -41,27 +41,71 @@
   ],
   "about_me_page": [
     {
-      "title": "Childhood",
-      "time": "1980s",
+      "title": "I SHAPE MY FUTURE",
+      "slogan": {
+        "main": "My Life Milestones",
+        "sub": "Set the goal, achieve the dream"
+      },
       "image": [
-        "/assets/pic1/childhood1.png",
-        "/assets/pic1/childhood2.png",
-        "/assets/pic1/MainAfter.webp",
-        "/assets/pic1/gratisography-funflower-800x525.jpg"
+        "/assets/pic1/child.jpg",
+        "/assets/pic1/vocational school.jpg",
+        "/assets/pic1/family.jpg",
+        "/assets/pic1/dicos.jpg",
+        "/assets/pic1/emica.jpg",
+        "/assets/pic1/vocational.jpg"
       ],
-      "description": "This is a testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      "description": [
+        "At 15, I achieved the crucial transition from rural to urban household registration in China by attending a vocational secondary school, a significant step in shaping my future.",
+        "To enrich my educational background, I worked hard to earn a self-taught associate degree in Business Administration, which opened the door to my first management role at Ting Hsin International Group.",
+        "Welcoming my child, a moment that filled my life with love and joy.",
+        "Seeking new opportunities and a better quality of life, I chose Canada. I earned a DEP diploma in computer support, passed the French intermediary level test, gained local experience at ShopperPlus, and met all the skilled worker program requirements, receiving my PR after five years.",
+        "During my DEP studies and job at ShopperPlus, I discovered a new dream: becoming a developer. I'm working hard to achieve it, and this time, I need your support..."
+      ]
     },
     {
-      "title": "Childhood",
-      "time": "1990s",
-      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
-      "description": "This is a test"
+      "title": "I AM HERE",
+      "slogan": { "main": "Canada", "sub": "Where my dreams begin" },
+      "image": [
+        "/assets/pic1/channel.jpg",
+        "/assets/pic1/google analytics.png",
+        "/assets/pic1/cx50.png"
+      ],
+      "description": [
+        "Moved to Canada with my 3-year-old son.",
+        "Learned French from scratch, reaching B2 level.",
+        "Earned a DEP in computer support.",
+        "Landed my first job in Canada as a Product Specialist at ShopperPlus.",
+        "Created a personal channel to share insights and information on immigrating to Canada.",
+        "Obtained a computer science certificate.",
+        "Earned a Google Data Analytics certificate.",
+        "Completed full-stack web application development on Coursera."
+      ]
     },
     {
-      "title": "Childhood",
-      "time": "2000s",
-      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/MainAfter.webp"],
-      "description": "This is a test"
+      "title": "PLACES I'VE ROAMED",
+      "slogan": { "main": "Travel", "sub": "What Fuels My Creativity" },
+      "image": [
+        "/assets/pic1/v1.png",
+        "/assets/pic1/v2.jpg",
+        "/assets/pic1/v3.jpg",
+        "/assets/pic1/h1.jpg",
+        "/assets/pic1/h2.jpg",
+        "/assets/pic1/h3.jpg"
+      ],
+      "description": [
+        "Every city in China",
+        "Nepal",
+        "Korea",
+        "Singapore",
+        "Malaysia",
+        "Japan",
+        "Vietnam",
+        "Cambodia",
+        "Tibet",
+        "USA: California, New York",
+        "Canada: Alberta, Ontario, Quebec",
+        "Embracing both Canada's winter and summer seasons"
+      ]
     }
   ],
   "contact_me_page": {

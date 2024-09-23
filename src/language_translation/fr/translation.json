@@ -44,10 +44,72 @@
   ],
   "about_me_page": [
     {
-      "title": "Childhood",
-      "image": ["/assets/pic1/childhood1.png", "/assets/pic1/childhood2.png"],
-      "description": "This is a test"
-    }
+        "title": "JE FAÇONNE MON AVENIR",
+        "slogan": {
+          "main": "Les étapes clés de ma vie",
+          "sub": "Fixer l'objectif, réaliser le rêve"
+        },
+        "image": [
+          "/assets/pic1/child.jpg",
+          "/assets/pic1/vocational school.jpg",
+          "/assets/pic1/family.jpg",
+          "/assets/pic1/dicos.jpg",
+          "/assets/pic1/emica.jpg",
+          "/assets/pic1/vocational.jpg"
+        ],
+        "description": [
+          "À 15 ans, j'ai réalisé la transition cruciale de l'enregistrement des ménages ruraux à urbains en Chine en fréquentant une école secondaire professionnelle, une étape importante dans la construction de mon avenir. ",
+          "Pour enrichir mon parcours éducatif, j'ai travaillé dur pour obtenir un diplôme d'associé en administration des affaires en autodidacte, ce qui m'a ouvert les portes de mon premier poste de gestion chez Ting Hsin International Group.",
+          "Accueillir mon enfant, un moment qui a rempli ma vie d'amour et de joie. ",
+          "À la recherche de nouvelles opportunités et d'une meilleure qualité de vie, j'ai choisi le Canada. J'ai obtenu un DEP en soutien informatique, réussi le test de français de niveau intermédiaire, acquis une expérience locale chez ShopperPlus et rempli toutes les conditions du programme des travailleurs qualifiés, obtenant ma résidence permanente après cinq ans.",
+          "Pendant mes études en DEP et mon travail chez ShopperPlus, j'ai découvert un nouveau rêve : devenir développeur. Je travaille dur pour y parvenir, et cette fois, j'ai besoin de votre soutien..."
+        ]
+      },
+      {
+        "title": "JE SUIS ICI",
+        "slogan": { "main": "Canada", "sub": "Là où mes rêves commencent" },
+        "image": [
+          "/assets/pic1/channel.jpg",
+          "/assets/pic1/google analytics.png",
+          "/assets/pic1/cx50.png"
+        ],
+        "description": [
+          "J'ai déménagé au Canada avec mon fils de 3 ans.",
+          "J'ai appris le français à partir de zéro, atteignant le niveau B2. ",
+          "J'ai obtenu un DEP en soutien informatique.",
+          "J'ai décroché mon premier emploi au Canada en tant que spécialiste de produit chez ShopperPlus.",
+          "J'ai créé une chaîne personnelle pour partager des informations et des conseils sur l'immigration au Canada. ",
+          "J'ai obtenu un certificat en informatique.",
+          "J'ai obtenu un certificat en analyse de données Google.",
+          "J'ai terminé une formation en développement d'applications web full-stack sur Coursera. "
+        ]
+      },
+      {
+        "title": "LES ENDROITS QUE J'AI PARCOURUS",
+        "slogan": { "main": "Voyage", "sub": "Ce qui alimente ma créativité" },
+        "image": [
+          "/assets/pic1/v1.png",
+          "/assets/pic1/v2.jpg",
+          "/assets/pic1/v3.jpg",
+          "/assets/pic1/h1.jpg",
+          "/assets/pic1/h2.jpg",
+          "/assets/pic1/h3.jpg"
+        ],
+        "description": [
+          "Chaque ville en Chine",
+          "Népal",
+          "Corée",
+          "Singapour",
+          "Malaisie",
+          "Japon",
+          "Vietnam",
+          "Cambodge",
+          "Tibet",
+          "États-Unis : Californie, New York",
+          "Canada : Alberta, Ontario, Québec",
+          "Apprécier les hivers et les étés du Canada"
+        ]
+      }
   ],
   "contact_me_page": {
     "name": "Votre Nom",

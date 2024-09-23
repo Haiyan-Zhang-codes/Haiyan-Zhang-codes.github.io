@@ -1,4 +1,5 @@
 import { Box, useTheme, Typography } from "@mui/material";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const PersonalWidget = ({ title, image, description }) => {
   const getRandomRotation = (index) => {
@@ -20,10 +21,10 @@ const PersonalWidget = ({ title, image, description }) => {
       }}
     >
       <Typography
-        fontSize="4rem"
+        fontSize="3rem"
         sx={{
           position: "absolute",
-          top: "45%",
+          top: "25%",
           left: "50%",
           transform: "translateX(-50%)",
           color: theme.palette.primary.light,
@@ -62,15 +63,15 @@ const PersonalWidget = ({ title, image, description }) => {
                 width: "100%",
                 height: "auto",
                 opacity: 0,
-                animation:'fadeIn 0.6s forwards',
+                animation: "fadeIn 0.6s forwards",
                 animationDelay: `${index * 0.3}s`,
                 transform: getRandomRotation(index), // Random rotation
                 transition: "transform 0.3s ease",
                 zIndex: 0,
-                position: 'relative',
+                position: "relative",
                 "&:hover": {
                   transform: "scale(2)", // Hover effect to enlarge image
-                  zIndex: 10, 
+                  zIndex: 10,
                 },
                 borderRadius: "8px", // Optional: rounded corners
               }}
@@ -79,9 +80,17 @@ const PersonalWidget = ({ title, image, description }) => {
         ))}
       </Box>
       <Box sx={{ marginTop: "40px", padding: "20px" }}>
-        <Typography color={theme.palette.neutral.mediumMain} fontSize="1.2rem">
-          {description}
-        </Typography>
+        {description.map((item) => (
+          <Box display="flex" gap="0.5rem" color={theme.palette.neutral.mediumMain}>
+            <KeyboardArrowRightIcon />
+            <Typography
+              
+              fontSize="1.2rem"
+            >
+              {item}
+            </Typography>
+          </Box>
+        ))}
       </Box>
     </Box>
   );
