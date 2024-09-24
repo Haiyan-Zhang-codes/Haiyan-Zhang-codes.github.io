@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <script type="text/javascript">
+        console.log('test1')
       var currentPath = window.location.pathname;
       var currentHash = window.location.hash;
+      console.log('test2', currentHash, currentPath)
       if (currentHash && currentHash.length > 0) {
         // If there's already a hash, we assume the user is on the right path and avoid redirecting again
         window.location.replace(window.location.href); // No additional redirect needed
@@ -20,7 +22,9 @@
 
         // Redirect to the same route using hash routing
         var newPath = "/#" + currentPath;
+        console.log(newPath)
         window.location.replace(newPath);
+        console.log('test3')
       }
     </script>
   </head>
