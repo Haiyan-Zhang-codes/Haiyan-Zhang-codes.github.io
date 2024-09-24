@@ -1,4 +1,4 @@
-import {  Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import {  Routes, Route, Navigate, BrowserRouter} from "react-router-dom";
 import HomePage from "./scenes/home_page";
 import AboutPage from "./scenes/about_page";
 import WebAppDevPage from "./scenes/web_app_dev_projects_page";
@@ -7,18 +7,19 @@ import ContactMePage from "./scenes/contact_me_page";
 import { ModeProvider } from "./ModeContext";
 import { CssBaseline } from "@mui/material";
 import i18n from "./i18n";
-// import { useTranslation } from "react-i18next";
+
+
+  
 
 
 function App() {
-  // const { i18n } = useTranslation();
   const setLanguageFromUrl = (lang) => {
     i18n.changeLanguage(lang);
   }
 
   return (
     <div className="app">
-      <HashRouter>
+      <BrowserRouter>
       <CssBaseline />
       <ModeProvider>        
           <Routes>
@@ -35,6 +36,7 @@ function App() {
             <Route path="/fr/about-me" element={<AboutPage />} />
             <Route path="/fr/contact-me" element={<ContactMePage />} />
 
+
             <Route path="/fr/*"
             element={() => {
               setLanguageFromUrl("fr");
@@ -47,7 +49,7 @@ function App() {
             }} />
           </Routes>
       </ModeProvider>       
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

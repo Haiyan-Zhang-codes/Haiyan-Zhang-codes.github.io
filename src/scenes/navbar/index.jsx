@@ -46,7 +46,10 @@ const Navbar = () => {
     const currentLang = i18n.language;
     const newLang = currentLang === "en" ? "fr" : "en";
 
-    const pathWithoutLang = window.location.pathname.replace(/(\/en|\/fr)/, "");
+    const hash = window.location.hash.replace(/#\/(en|fr)/, "");
+    const pathname = window.location.pathname.replace(/\/(en|fr)/, "");
+    const pathWithoutLang = hash || pathname;
+
     navigate(`/${newLang}${pathWithoutLang}`);
 
     i18n.changeLanguage(newLang);
