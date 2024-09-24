@@ -6,11 +6,12 @@ import DataAnalyticsPage from "./scenes/data_analytics_projects_page";
 import ContactMePage from "./scenes/contact_me_page";
 import { ModeProvider } from "./ModeContext";
 import { CssBaseline } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import i18n from "./i18n";
+// import { useTranslation } from "react-i18next";
 
 
 function App() {
-  const { i18n } = useTranslation();
+  // const { i18n } = useTranslation();
   const setLanguageFromUrl = (lang) => {
     i18n.changeLanguage(lang);
   }
