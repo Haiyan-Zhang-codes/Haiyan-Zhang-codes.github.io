@@ -49,7 +49,7 @@ useEffect(() => {
   }, [sentenceIndex, wordIndex, sentences]);
 
   return (
-    <Box>
+    <Box backgroundColor={theme.palette.background.alt} height="100vh">
       <Navbar/>
       {isNonMobileScreens ? (
         <Box

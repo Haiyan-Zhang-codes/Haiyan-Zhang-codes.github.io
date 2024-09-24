@@ -1,9 +1,9 @@
 import ProjectWidget from "./ProjectWidget";
 import { useTranslation } from "react-i18next";
 
-const ProjectsWidget = () =>{
+const DataProjectsWidget = () =>{
     const {t} = useTranslation()
-    const contents = t("web_app_project", {returnObjects: true})
+    const contents = t("data_analysis_project", {returnObjects: true})
 
 
     return(
@@ -29,4 +29,4 @@ const ProjectsWidget = () =>{
 
 }
 
-export default ProjectsWidget
+export default DataProjectsWidget

@@ -11,31 +11,40 @@
       "language": "Typescript",
       "database": "MySQL, AWS RDS",
       "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
+      "other_tools": "AWS, GitHub, Docker",
       "github_link": "Private",
       "web_app_link": "https://brokerease.netlify.app/login",
       "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
       "workflow": [
-        "Database Design: using draw.io to design the database structure",
-        "Build Database: using Knex to create migration files for the database",
-        "Database configuration: Created an AWS RDS database and configured the database connection.",
-        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-        "Test: Used Postman to test each API with seed data."
+        "Database Design: Designed the database structure using draw.io, and created migration files using Knex.",
+        "Database Configuration: Set up and configured an AWS RDS database for production use.",
+        "API Development: Built 25 RESTful APIs (auth, properties, search, users, dashboard) to handle core application functionalities.",
+        "Testing: Utilized Postman to thoroughly test all APIs with seed data.",
+        "Containerization: Leveraged Docker for consistent development and deployment environments.",
+        "Deployment: Deployed the application on AWS, ensuring scalability and security.",
+        "Collaboration: Collaborated with frontend developers via GitHub to integrate and enhance features.",
+        "Agile Methodology: Worked in Agile and Scrum environments to deliver high-quality software in collaboration with cross-functional teams."
       ]
-    },
+    }
+  ],
+  "data_analysis_project": [
     {
-      "project": "Computer Science Certificate Final Project - Bookkeeping",
+      "project": "Capstone_Case Study_Bellabeat",
       "language": "Python",
-      "database": "SQLite",
-      "packages": "Flask, flask_session, werkzeug, datetime",
-      "github_link": "Private",
-      "web_app_link": "https://brokerease.netlify.app/login",
-      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "database": "MySQL",
+      "packages": "pandas, numpy, matplotlib",
+      "other_tools": "Jupiter, Kaggle, Excel",
+      "github_link": "https://www.kaggle.com/code/haiyanzhang1982/capstone-case-study-bellabeat",
+      "web_app_link": "N/A",
+      "description": "This project analyzes public health tracker data to identify user behavior patterns and uncover sales opportunities for Bellabeat's smart devices.",
       "workflow": [
-        "Database Design: using draw.io to design the database structure",
-        "Build Database: using Knex to create migration files for the database",
-        "Database configuration: Created an AWS RDS database and configured the database connection.",
-        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-        "Test: Used Postman to test each API with seed data."
+        "Ask: Analyze external smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices, apply the insights to one Bellabeat product.",
+        "Prepare: Dowload the dataset from Kaggle and store it on my local machine;I import all the data into MySQL Database, and renamed files with date suffix, then import files to Kaggle input, use Python to investigate data;Determine the credibility of the data",
+        "Process: Handling Missing Data; Handling Duplicates; Renaming columns; Convert dates to datetime; Merge cleaned data and save to a new file; Fill NaN with 0",
+        "Analyze: Correlation; Categorize users by average very active minutes; Categorize users by average steps; Sedentary analysis",
+        "Share: Visualization of analysis results using pie charts, bar charts, and scatter plots.",
+        "Act: Apply the insights to business, based on the analysis results, providing recommendations for Bellabeat."
+        
       ]
     }
   ],

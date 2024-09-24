@@ -105,7 +105,7 @@ const AboutPage = () => {
             )}
           </FlexBetween>
         ) : (
-          <FlexBetween flexDirection="column" padding="2rem 6%">
+          <FlexBetween flexDirection="column" padding="2rem 6%" backgroundColor={alt}>
             <Box alignContent="center">
               <Typography
                 color={theme.palette.primary.main}

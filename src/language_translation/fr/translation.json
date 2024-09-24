@@ -14,102 +14,110 @@
       "language": "Typescript",
       "database": "MySQL, AWS RDS",
       "packages": "Koa, Knex, bcrypt, cors, dayjs, dotenv, jsonwebtoken, multer, mysql2, nodemailer, zod.",
-      "github_link": "Private",
+      "other_tools": "AWS, GitHub, Docker",
+      "github_link": "Privé",
       "web_app_link": "https://brokerease.netlify.app/login",
-      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "description": "C'est une application web qui permet aux courtiers de partager des propriétés avec des clients dans un espace partagé et de communiquer avec eux dans cet espace. Elle vise à simplifier la communication quotidienne des courtiers avec leurs clients, à suivre les intérêts des clients et à aider les courtiers à augmenter leur taux de transaction.",
       "workflow": [
-        "Database Design: using draw.io to design the database structure",
-        "Build Database: using Knex to create migration files for the database",
-        "Database configuration: Created an AWS RDS database and configured the database connection.",
-        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-        "Test: Used Postman to test each API with seed data."
+        "Conception de la base de données : Conception de la structure de la base de données avec draw.io et création des fichiers de migration avec Knex.",
+        "Configuration de la base de données : Mise en place et configuration d'une base de données AWS RDS pour une utilisation en production.",
+        "Développement des API : Création de 25 API RESTful (auth, propriétés, recherche, utilisateurs, tableau de bord) pour gérer les fonctionnalités principales de l'application.",
+        "Test : Utilisation de Postman pour tester minutieusement toutes les API avec des données de test.",
+        "Containerisation : Utilisation de Docker pour des environnements de développement et de déploiement cohérents.",
+        "Déploiement : Déploiement de l'application sur AWS, garantissant évolutivité et sécurité.",
+        "Collaboration : Collaboration avec les développeurs frontend via GitHub pour intégrer et améliorer les fonctionnalités.",
+        "Méthodologie Agile : Travail dans des environnements Agile et Scrum pour livrer des logiciels de haute qualité en collaboration avec des équipes multifonctionnelles."
       ]
-    },
+    }
+  ],
+  "data_analysis_project": [
     {
-      "project": "Computer Science Certificate Final Project - Bookkeeping",
+      "project": "Étude de cas Capstone_Bellabeat",
       "language": "Python",
-      "database": "SQLite",
-      "packages": "Flask, flask_session, werkzeug, datetime",
-      "github_link": "Private",
-      "web_app_link": "https://brokerease.netlify.app/login",
-      "description": "This is a web application that allows brokers to share properties with clients in a shared space and communicate with them within that space. It aims to simplify brokers' daily communication with clients, track clients' interests, and help brokers increase their transaction rate.",
+      "database": "MySQL",
+      "packages": "pandas, numpy, matplotlib",
+      "other_tools": "Jupiter, Kaggle, Excel",
+      "github_link": "https://www.kaggle.com/code/haiyanzhang1982/capstone-case-study-bellabeat",
+      "web_app_link": "N/A",
+      "description": "Ce projet analyse les données des trackers de santé publique pour identifier les comportements des utilisateurs et découvrir des opportunités de vente pour les appareils intelligents de Bellabeat.",
       "workflow": [
-        "Database Design: using draw.io to design the database structure",
-        "Build Database: using Knex to create migration files for the database",
-        "Database configuration: Created an AWS RDS database and configured the database connection.",
-        "APIs: auth/*, properties/*, search/*, users/*, dashboard/* 25 APIs in total, still ongoing",
-        "Test: Used Postman to test each API with seed data."
+        "Demander : Analyser les données d'utilisation de dispositifs intelligents externes afin de comprendre comment les consommateurs utilisent les appareils intelligents non Bellabeat et appliquer ces connaissances à un produit Bellabeat.",
+        "Préparer : Télécharger le jeu de données depuis Kaggle et le stocker sur ma machine locale ; j'importe toutes les données dans une base de données MySQL, renomme les fichiers avec un suffixe de date, puis importe les fichiers dans Kaggle input, utilise Python pour analyser les données ; évaluer la crédibilité des données.",
+        "Traiter : Gestion des données manquantes ; gestion des doublons ; renommer les colonnes ; convertir les dates en datetime ; fusionner les données nettoyées et les enregistrer dans un nouveau fichier ; remplir les valeurs NaN par 0.",
+        "Analyser : Corrélation ; catégoriser les utilisateurs par minutes très actives moyennes ; catégoriser les utilisateurs par pas moyens ; analyse de la sédentarité.",
+        "Partager : Visualisation des résultats de l'analyse à l'aide de diagrammes circulaires, de graphiques en barres et de nuages de points.",
+        "Agir : Appliquer les connaissances à l'entreprise et, en fonction des résultats de l'analyse, fournir des recommandations pour Bellabeat."
       ]
     }
   ],
   "about_me_page": [
     {
-        "title": "JE FAÇONNE MON AVENIR",
-        "slogan": {
-          "main": "Les étapes clés de ma vie",
-          "sub": "Fixer l'objectif, réaliser le rêve"
-        },
-        "image": [
-          "/assets/pic1/child.jpg",
+      "title": "JE FAÇONNE MON AVENIR",
+      "slogan": {
+        "main": "Les étapes clés de ma vie",
+        "sub": "Fixer l'objectif, réaliser le rêve"
+      },
+      "image": [
+        "/assets/pic1/child.jpg",
         "/assets/pic1/vocational school.JPG",
         "/assets/pic1/family.JPG",
         "/assets/pic1/dicos.JPG",
         "/assets/pic1/emica.jpg",
         "/assets/pic1/vocational.JPG"
-        ],
-        "description": [
-          "À 15 ans, j'ai réalisé la transition cruciale de l'enregistrement des ménages ruraux à urbains en Chine en fréquentant une école secondaire professionnelle, une étape importante dans la construction de mon avenir. ",
-          "Pour enrichir mon parcours éducatif, j'ai travaillé dur pour obtenir un diplôme d'associé en administration des affaires en autodidacte, ce qui m'a ouvert les portes de mon premier poste de gestion chez Ting Hsin International Group.",
-          "Accueillir mon enfant, un moment qui a rempli ma vie d'amour et de joie. ",
-          "À la recherche de nouvelles opportunités et d'une meilleure qualité de vie, j'ai choisi le Canada. J'ai obtenu un DEP en soutien informatique, réussi le test de français de niveau intermédiaire, acquis une expérience locale chez ShopperPlus et rempli toutes les conditions du programme des travailleurs qualifiés, obtenant ma résidence permanente après cinq ans.",
-          "Pendant mes études en DEP et mon travail chez ShopperPlus, j'ai découvert un nouveau rêve : devenir développeur. Je travaille dur pour y parvenir, et cette fois, j'ai besoin de votre soutien..."
-        ]
-      },
-      {
-        "title": "JE SUIS ICI",
-        "slogan": { "main": "Canada", "sub": "Là où mes rêves commencent" },
-        "image": [
-          "/assets/pic1/channel.JPG",
-          "/assets/pic1/google analytics.png",
-          "/assets/pic1/cx50.png"
-        ],
-        "description": [
-          "J'ai déménagé au Canada avec mon fils de 3 ans.",
-          "J'ai appris le français à partir de zéro, atteignant le niveau B2. ",
-          "J'ai obtenu un DEP en soutien informatique.",
-          "J'ai décroché mon premier emploi au Canada en tant que spécialiste de produit chez ShopperPlus.",
-          "J'ai créé une chaîne personnelle pour partager des informations et des conseils sur l'immigration au Canada. ",
-          "J'ai obtenu un certificat en informatique.",
-          "J'ai obtenu un certificat en analyse de données Google.",
-          "J'ai terminé une formation en développement d'applications web full-stack sur Coursera. "
-        ]
-      },
-      {
-        "title": "LES ENDROITS QUE J'AI PARCOURUS",
-        "slogan": { "main": "Voyage", "sub": "Ce qui alimente ma créativité" },
-        "image": [
-          "/assets/pic1/v1.PNG",
+      ],
+      "description": [
+        "À 15 ans, j'ai réalisé la transition cruciale de l'enregistrement des ménages ruraux à urbains en Chine en fréquentant une école secondaire professionnelle, une étape importante dans la construction de mon avenir. ",
+        "Pour enrichir mon parcours éducatif, j'ai travaillé dur pour obtenir un diplôme d'associé en administration des affaires en autodidacte, ce qui m'a ouvert les portes de mon premier poste de gestion chez Ting Hsin International Group.",
+        "Accueillir mon enfant, un moment qui a rempli ma vie d'amour et de joie. ",
+        "À la recherche de nouvelles opportunités et d'une meilleure qualité de vie, j'ai choisi le Canada. J'ai obtenu un DEP en soutien informatique, réussi le test de français de niveau intermédiaire, acquis une expérience locale chez ShopperPlus et rempli toutes les conditions du programme des travailleurs qualifiés, obtenant ma résidence permanente après cinq ans.",
+        "Pendant mes études en DEP et mon travail chez ShopperPlus, j'ai découvert un nouveau rêve : devenir développeur. Je travaille dur pour y parvenir, et cette fois, j'ai besoin de votre soutien..."
+      ]
+    },
+    {
+      "title": "JE SUIS ICI",
+      "slogan": { "main": "Canada", "sub": "Là où mes rêves commencent" },
+      "image": [
+        "/assets/pic1/channel.JPG",
+        "/assets/pic1/google analytics.png",
+        "/assets/pic1/cx50.png"
+      ],
+      "description": [
+        "J'ai déménagé au Canada avec mon fils de 3 ans.",
+        "J'ai appris le français à partir de zéro, atteignant le niveau B2. ",
+        "J'ai obtenu un DEP en soutien informatique.",
+        "J'ai décroché mon premier emploi au Canada en tant que spécialiste de produit chez ShopperPlus.",
+        "J'ai créé une chaîne personnelle pour partager des informations et des conseils sur l'immigration au Canada. ",
+        "J'ai obtenu un certificat en informatique.",
+        "J'ai obtenu un certificat en analyse de données Google.",
+        "J'ai terminé une formation en développement d'applications web full-stack sur Coursera. "
+      ]
+    },
+    {
+      "title": "LES ENDROITS QUE J'AI PARCOURUS",
+      "slogan": { "main": "Voyage", "sub": "Ce qui alimente ma créativité" },
+      "image": [
+        "/assets/pic1/v1.PNG",
         "/assets/pic1/v2.JPG",
         "/assets/pic1/v3.JPG",
         "/assets/pic1/h1.JPG",
         "/assets/pic1/h2.JPG",
         "/assets/pic1/h3.JPG"
-        ],
-        "description": [
-          "Chaque ville en Chine",
-          "Népal",
-          "Corée",
-          "Singapour",
-          "Malaisie",
-          "Japon",
-          "Vietnam",
-          "Cambodge",
-          "Tibet",
-          "États-Unis : Californie, New York",
-          "Canada : Alberta, Ontario, Québec",
-          "Apprécier les hivers et les étés du Canada"
-        ]
-      }
+      ],
+      "description": [
+        "Chaque ville en Chine",
+        "Népal",
+        "Corée",
+        "Singapour",
+        "Malaisie",
+        "Japon",
+        "Vietnam",
+        "Cambodge",
+        "Tibet",
+        "États-Unis : Californie, New York",
+        "Canada : Alberta, Ontario, Québec",
+        "Apprécier les hivers et les étés du Canada"
+      ]
+    }
   ],
   "contact_me_page": {
     "name": "Votre Nom",
