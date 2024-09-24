@@ -51,11 +51,11 @@
         },
         "image": [
           "/assets/pic1/child.jpg",
-          "/assets/pic1/vocational school.jpg",
-          "/assets/pic1/family.jpg",
-          "/assets/pic1/dicos.jpg",
-          "/assets/pic1/emica.jpg",
-          "/assets/pic1/vocational.jpg"
+        "/assets/pic1/vocational school.JPG",
+        "/assets/pic1/family.JPG",
+        "/assets/pic1/dicos.JPG",
+        "/assets/pic1/emica.jpg",
+        "/assets/pic1/vocational.JPG"
         ],
         "description": [
           "À 15 ans, j'ai réalisé la transition cruciale de l'enregistrement des ménages ruraux à urbains en Chine en fréquentant une école secondaire professionnelle, une étape importante dans la construction de mon avenir. ",
@@ -69,7 +69,7 @@
         "title": "JE SUIS ICI",
         "slogan": { "main": "Canada", "sub": "Là où mes rêves commencent" },
         "image": [
-          "/assets/pic1/channel.jpg",
+          "/assets/pic1/channel.JPG",
           "/assets/pic1/google analytics.png",
           "/assets/pic1/cx50.png"
         ],
@@ -88,12 +88,12 @@
         "title": "LES ENDROITS QUE J'AI PARCOURUS",
         "slogan": { "main": "Voyage", "sub": "Ce qui alimente ma créativité" },
         "image": [
-          "/assets/pic1/v1.png",
-          "/assets/pic1/v2.jpg",
-          "/assets/pic1/v3.jpg",
-          "/assets/pic1/h1.jpg",
-          "/assets/pic1/h2.jpg",
-          "/assets/pic1/h3.jpg"
+          "/assets/pic1/v1.PNG",
+        "/assets/pic1/v2.JPG",
+        "/assets/pic1/v3.JPG",
+        "/assets/pic1/h1.JPG",
+        "/assets/pic1/h2.JPG",
+        "/assets/pic1/h3.JPG"
         ],
         "description": [
           "Chaque ville en Chine",
