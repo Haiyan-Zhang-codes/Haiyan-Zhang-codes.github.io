@@ -47,12 +47,12 @@
         "sub": "Set the goal, achieve the dream"
       },
       "image": [
-        "/assets/pic1/child.jpg",
-        "/assets/pic1/vocational school.jpg",
-        "/assets/pic1/family.jpg",
-        "/assets/pic1/dicos.jpg",
+        "/assets/pic1/child.JPG",
+        "/assets/pic1/vocational school.JPG",
+        "/assets/pic1/family.JPG",
+        "/assets/pic1/dicos.JPG",
         "/assets/pic1/emica.jpg",
-        "/assets/pic1/vocational.jpg"
+        "/assets/pic1/vocational.JPG"
       ],
       "description": [
         "At 15, I achieved the crucial transition from rural to urban household registration in China by attending a vocational secondary school, a significant step in shaping my future.",
@@ -66,7 +66,7 @@
       "title": "I AM HERE",
       "slogan": { "main": "Canada", "sub": "Where my dreams begin" },
       "image": [
-        "/assets/pic1/channel.jpg",
+        "/assets/pic1/channel.JPG",
         "/assets/pic1/google analytics.png",
         "/assets/pic1/cx50.png"
       ],
@@ -85,12 +85,12 @@
       "title": "PLACES I'VE ROAMED",
       "slogan": { "main": "Travel", "sub": "What Fuels My Creativity" },
       "image": [
-        "/assets/pic1/v1.png",
-        "/assets/pic1/v2.jpg",
-        "/assets/pic1/v3.jpg",
-        "/assets/pic1/h1.jpg",
-        "/assets/pic1/h2.jpg",
-        "/assets/pic1/h3.jpg"
+        "/assets/pic1/v1.PNG",
+        "/assets/pic1/v2.JPG",
+        "/assets/pic1/v3.JPG",
+        "/assets/pic1/h1.JPG",
+        "/assets/pic1/h2.JPG",
+        "/assets/pic1/h3.JPG"
       ],
       "description": [
         "Every city in China",
