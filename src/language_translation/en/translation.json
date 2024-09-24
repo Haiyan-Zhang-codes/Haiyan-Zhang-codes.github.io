@@ -25,6 +25,26 @@
         "Collaboration: Collaborated with frontend developers via GitHub to integrate and enhance features.",
         "Agile Methodology: Worked in Agile and Scrum environments to deliver high-quality software in collaboration with cross-functional teams."
       ]
+    },
+    {
+      "project": "Portfolio",
+      "language": "Javascript",
+      "database": "N/A (local storage)",
+      "packages": "react, react-router, react-router-dom, react-i18next, i18next, emailjs-com, @mui/material, @mui/icons-material",
+      "other_tools": "GitHub",
+      "github_link": "https://github.com/Haiyan-Zhang-codes/Haiyan-Zhang-codes.github.io",
+      "web_app_link": "https://haiyan-zhang-codes.github.io/en/home",
+      "description": "This is a React-based frontend web page showcasing my portfolio.",
+      "workflow": [
+        "Create a React app in a Node.js runtime environment.",
+        "Create the file structure based on the pages.",
+        "Install all dependencies.",
+        "Create translation.json files for both English (en) and French (fr).",
+        "Create custom theme settings using MUI.",
+        "Create components and widgets for different uses on various pages.",
+        "Create the pages and run the app to identify any necessary style adjustments, using MUI and styles.css for page styling.",
+        "Use a CI/CD pipeline to deploy the app on GitHub."
+      ]
     }
   ],
   "data_analysis_project": [
