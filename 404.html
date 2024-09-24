@@ -1,14 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script type="text/javascript">
-      // Redirect to the same route using hash routing
       var currentPath = window.location.pathname;
-      var newPath = "/#" + currentPath;
-      window.location.replace(newPath);
+      var currentHash = window.location.hash;
+      if (currentHash && currentHash.length > 0) {
+        // If there's already a hash, we assume the user is on the right path and avoid redirecting again
+        window.location.replace(window.location.href); // No additional redirect needed
+      } else {
+        // Check if the pathname includes a valid language prefix (e.g., '/en', '/fr')
+        var supportedLanguages = ["en", "fr"]; // Add more if needed
+        var languagePrefix = currentPath.split("/")[1];
+
+        // If the language prefix is missing or invalid, default to 'en'
+        if (!supportedLanguages.includes(languagePrefix)) {
+          languagePrefix = "en";
+        }
+
+        // Redirect to the same route using hash routing
+        var newPath = "/#" + currentPath;
+        window.location.replace(newPath);
+      }
     </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
