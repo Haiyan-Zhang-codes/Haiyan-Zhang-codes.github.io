@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {  Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import HomePage from "./scenes/home_page";
 import AboutPage from "./scenes/about_page";
 import WebAppDevPage from "./scenes/web_app_dev_projects_page";
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter>
       <CssBaseline />
       <ModeProvider>        
           <Routes>
@@ -47,7 +47,7 @@ function App() {
             }} />
           </Routes>
       </ModeProvider>       
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
