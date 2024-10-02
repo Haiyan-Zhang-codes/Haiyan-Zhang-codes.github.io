@@ -1,4 +1,4 @@
-import { Box, useTheme, Typography } from "@mui/material";
+import { Box, useTheme, Typography, useMediaQuery } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const PersonalWidget = ({ title, image, description }) => {
@@ -8,6 +8,7 @@ const PersonalWidget = ({ title, image, description }) => {
   };
 
   const theme = useTheme();
+  const isNonMobileScreens = useMediaQuery("(min-width: 1100px)")
 
   return (
     <Box
@@ -20,75 +21,83 @@ const PersonalWidget = ({ title, image, description }) => {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <Typography
-        fontSize="3rem"
-        sx={{
-          position: "absolute",
-          top: "25%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          color: theme.palette.primary.light,
-          zIndex: 10,
-          textShadow: "2px 2px 6px rgba(0, 0, 0, 0.7)",
-          pointerEvents: "none",
-        }}
+      <Box 
+      sx={{
+        position: "relative"
+      }}
       >
-        {title}
-      </Typography>
+        <Typography
+          // fontSize='clamp(1rem, 2vw, 2rem)'
+          noWrap
+          sx={{
+            position: "absolute",
+            fontSize: isNonMobileScreens? '3rem': '2rem',
+            whiteSpace: "nowrap",
+            top: "50%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            color: theme.palette.primary.light,
+            zIndex: 10,
+            textShadow: "2px 2px 6px rgba(0, 0, 0, 0.7)",
+            pointerEvents: "none",
+          }}
+        >
+          {title}
+        </Typography>
 
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap", // Allows wrapping of items
-          justifyContent: "center", // Centers items horizontally
-          gap: "16px", // Spacing between images
-          marginTop: "60px", // Space below title
-        }}
-      >
-        {image.map((imgSrc, index) => (
-          <Box
-            key={index}
-            sx={{
-              width: "calc(33.33% - 16px)", // 3 columns layout
-              height: "auto",
-              position: "relative", // For handling image hover effects
-            }}
-          >
-            {/* Image */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap", // Allows wrapping of items
+            justifyContent: "center", // Centers items horizontally
+            gap: "16px", // Spacing between images
+            marginTop: "60px", // Space below title
+          }}
+        >
+          {image.map((imgSrc, index) => (
             <Box
-              component="img"
-              src={imgSrc}
-              alt={`Image ${index + 1}`}
+              key={index}
               sx={{
-                width: "100%",
+                width: "calc(33.33% - 16px)", // 3 columns layout
                 height: "auto",
-                opacity: 0,
-                animation: "fadeIn 0.6s forwards",
-                animationDelay: `${index * 0.3}s`,
-                transform: getRandomRotation(index), // Random rotation
-                transition: "transform 0.3s ease",
-                zIndex: 0,
-                position: "relative",
-                "&:hover": {
-                  transform: "scale(2)", // Hover effect to enlarge image
-                  zIndex: 10,
-                },
-                borderRadius: "8px", // Optional: rounded corners
+                position: "relative", // For handling image hover effects
               }}
-            />
-          </Box>
-        ))}
-      </Box>
-      <Box sx={{ marginTop: "40px", padding: "20px" }}>
-        {description.map((item) => (
-          <Box display="flex" gap="0.5rem" color={theme.palette.neutral.mediumMain}>
-            <KeyboardArrowRightIcon />
-            <Typography
-              
-              fontSize="1.2rem"
             >
-              {item}
-            </Typography>
+              {/* Image */}
+              <Box
+                component="img"
+                src={imgSrc}
+                alt={`Image ${index + 1}`}
+                sx={{
+                  width: "100%",
+                  height: "auto",
+                  opacity: 0,
+                  animation: "fadeIn 0.6s forwards",
+                  animationDelay: `${index * 0.3}s`,
+                  transform: getRandomRotation(index), // Random rotation
+                  transition: "transform 0.3s ease",
+                  zIndex: 0,
+                  position: "relative",
+                  "&:hover": {
+                    transform: "scale(2)", // Hover effect to enlarge image
+                    zIndex: 10,
+                  },
+                  borderRadius: "8px", // Optional: rounded corners
+                }}
+              />
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box sx={{ marginTop: "40px" }}>
+        {description.map((item) => (
+          <Box
+            display="flex"
+            gap="0.5rem"
+            color={theme.palette.neutral.mediumMain}
+          >
+            <KeyboardArrowRightIcon />
+            <Typography fontSize="1.2rem">{item}</Typography>
           </Box>
         ))}
       </Box>
